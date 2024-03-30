@@ -114,7 +114,7 @@ const Signin = () => {
                       />
                       <span className="d-flex align-items-center" onClick={handleToggle} style={{ justifyContent: "right" }}>
                         <Icon className="d-flex mr-10" icon={icon} size={25}
-                          style={{ position: "absolute", width: "3%", color: "#1D4AEB", marginRight: "2%" }}
+                          style={{ position: "absolute", width: "3%", color: "#FF0091", marginRight: "2%" }}
                         />
                       </span>
                     </div>

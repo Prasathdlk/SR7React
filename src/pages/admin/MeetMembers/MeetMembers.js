@@ -353,7 +353,7 @@ const MeetMembers = () => {
               {isLoading &&
                 <div className="spin-loader">
                   <RotatingLines
-                    strokeColor="#1D4AEB"
+                    strokeColor="#FF0091"
                     strokeWidth="5"
                     animationDuration="0.75"
                     width="70"

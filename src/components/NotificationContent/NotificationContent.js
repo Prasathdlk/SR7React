@@ -109,7 +109,7 @@ const NotificationContent = () => {
           <RotatingLines
             height="20"
             width="20"
-            color="#1D4AEB"
+            color="#FF0091"
             wrapperStyle={{}}
             wrapperClass=""
             visible={true}
@@ -200,7 +200,7 @@ const NotificationContent = () => {
                     if (found.length > 0) {
                       return (
                         <div className="text-left px-2">
-                          <p style={{ marginTop: "12px", fontSize: "12px",color:"white" }}>{found.length} Unread</p>
+                          <p style={{ marginTop: "12px", fontSize: "12px",color:"white"  }}>{found.length} Unread</p>
                         </div>
                       )
                     }

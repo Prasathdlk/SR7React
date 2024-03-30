@@ -26,7 +26,7 @@ const SVQuoteForm = ({ autoFill, setRemoveId }) => {
           setRemoveId={setRemoveId}
           value={value}
           setValue={setValue}
-          placeholder="SR7 Ship Spares Quote"
+          placeholder="SR7 Events & Exhibitions Quote"
         />
         <div ref={scrollRef}></div>
       </div>

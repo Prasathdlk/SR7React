@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import talalogo from "assets/img/translogo1.png"
 import "assets/css/Login.css"
-import log1 from "assets/img/sign8.png"
+import log1 from "assets/img/sign8.jpg"
 import { useForm } from "react-hook-form";
 import { forgetPassword } from "redux/Actions/Authentication";
 import { useDispatch, useSelector } from "react-redux";

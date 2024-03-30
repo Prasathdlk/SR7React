@@ -73,7 +73,7 @@ const Sponser = ({ list }) => {
         {isLoadingS &&
           <div className="spin-loader">
             <RotatingLines
-              strokeColor="#1d4aeb"
+              strokeColor="#FF0091"
               strokeWidth="5"
               animationDuration="0.75"
               width="70"

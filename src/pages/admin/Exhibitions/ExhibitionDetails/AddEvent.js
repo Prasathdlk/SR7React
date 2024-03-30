@@ -110,7 +110,7 @@ const AddEvent = ({ show, setShow }) => {
             {isLoading &&
               <div className="spin-loader" style={{ zIndex: 99 }}>
                 <RotatingLines
-                  strokeColor="#1D4AEB"
+                  strokeColor="#FF0091"
                   strokeWidth="5"
                   animationDuration="0.75"
                   width="70"

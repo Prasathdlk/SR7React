@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import log1 from "assets/img/sign8.png"
+import log1 from "assets/img/sign8.jpg"
 import talalogo from "assets/img/translogo1.png"
 import "assets/css/Login.css"
 import { useForm } from "react-hook-form";
@@ -171,7 +171,7 @@ const ResetPassword = () => {
                       />
                       <span className="d-flex align-items-center" onClick={handleToggle} style={{ justifyContent: "right" }}>
                         <Icon className="d-flex mr-10" icon={icon} size={25}
-                          style={{ position: "absolute", width: "3%", color: "#1D4AEB", marginRight: "2%" }}
+                          style={{ position: "absolute", width: "3%", color: "#FF0091", marginRight: "2%" }}
                         />
                       </span>
                     </div>
@@ -192,7 +192,7 @@ const ResetPassword = () => {
                       />
                       <span className="d-flex align-items-center" onClick={handleToggle1} style={{ justifyContent: "right" }}>
                         <Icon className="d-flex mr-10" icon={icon1} size={25}
-                          style={{ position: "absolute", width: "3%", color: "#1D4AEB", marginRight: "2%" }}
+                          style={{ position: "absolute", width: "3%", color: "#FF0091", marginRight: "2%" }}
                         />
                       </span>
                     </div>

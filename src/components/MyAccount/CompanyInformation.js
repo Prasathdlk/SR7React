@@ -172,7 +172,7 @@ const CompanyInformation = ({
   return (
     <div>
       <div className='col-12 d-flex justify-content-center mt-3'>
-        <h4>COMPANY<span style={{ color: "#1D4AEB" }}> INFORMATION</span>
+        <h4>COMPANY<span style={{ color: "#FF0091" }}> INFORMATION</span>
         </h4>
       </div>
 

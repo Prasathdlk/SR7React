@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import location_logo from "assets/img/location.png";
 
 
+
 import {
   GoogleMap,
   InfoWindowF,
@@ -232,7 +233,7 @@ const MemberSearchResult = ({Links}) => {
           :
           <div className="col-xl-12 col-lg-12" style={{ margin: "15% 40%" }}>
             <RotatingLines
-              strokeColor="#1D4AEB"
+              strokeColor="#FF0091"
               strokeWidth="5"
               animationDuration="1.00"
               width="70"

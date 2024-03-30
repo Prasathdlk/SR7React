@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import talalogo from "assets/img/translogo1.png"
 // import log1 from "assets/img/log4.jpg"
-import log1 from "assets/img/sign8.png"
+import log1 from "assets/img/sign8.jpg"
 import "assets/css/Login.css"
 import { useForm } from "react-hook-form";
 import { getLogin } from "redux/Actions/Authentication";
@@ -44,7 +44,7 @@ const Signin = () => {
     dispatch(memberProfile());
     if (isSuccess || isLoggedin) {
       if (sub) {
-        toast.success("Login Successfully!!! Welcome to SR7 Ship Spares", {
+        toast.success("Login Successfully!!! Welcome to SR7 Events & Exhibtions", {
           toastId: 'success',
           autoClose: 2000
         });

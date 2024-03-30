@@ -16,7 +16,7 @@ const DepartedMember = () => {
     }));
   }, [])
   const para = <>
-    A list of licensees who have exited the SR7 Ship Spares is given below. Carefully
+    A list of licensees who have exited the SR7 Events & Exhibitions is given below. Carefully
     review this updated list before initiating any unpaid invoice claims and other
     unsolved issues.<br /> Note that our resolution centre will not address unpaid claims for departed members
     after their departure date. <br /> To ensure efficient handling of your claims, it is important to notify us promptly about

@@ -23,9 +23,9 @@
 
 .btn-success {
     color: #fff !important;
-    background-color: #1D4AEB !important;
-    border-color: #1D4AEB !important;
-    box-shadow: 0 0px 0px 0px #1D4AEB !important;
+    background-color: #FF0091 !important;
+    border-color: #FF0091 !important;
+    box-shadow: 0 0px 0px 0px #FF0091 !important;
 }
 
 button.ant-btn.css-dev-only-do-not-override-htwhyh.ant-btn-default.sendQuoteBtn {
@@ -201,7 +201,7 @@ button.btn.btn-danger {
 }
 
 .text-success-teal {
-    color: #1D4AEB !important;
+    color: #FF0091 !important;
 }
 
 .float-right {
@@ -263,12 +263,7 @@ button.btn.btn-danger {
 
 .ant-tooltip-inner {
     color: white !important;
-    background-color: #1D4AEB !important;
-}
-
-.ant-tooltip
-{
-    --antd-arrow-background-color : white !important;
+    /* background-color: #1b4d70 !important; */
 }
 
 .card-boxes {

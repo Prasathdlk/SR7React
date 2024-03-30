@@ -162,13 +162,13 @@
     color: #888ea8 !important;
 }
 .bg-gradient-primary {
-    background-color: #1D4AEB !important;
-    background: linear-gradient(to right, #1D4AEB 0%, #1D4AEB 100%);   
+    background-color: #FF0091 !important;
+    background: linear-gradient(to right, #FF0091 0%, #FF0091 100%);   
      /* background: linear-gradient(to right #252e5e 0%, #094D72 100%); */
     border: 0px;
 }
 .bg-gradient-primarys {
-    background-color: #1D4AEB !important;  
+    background-color: #FF0091 !important;  
     border: 0px;
 }
 .text-white {
@@ -176,7 +176,7 @@
 }
 @media only screen and (min-width: 1400px) {
     .bg-gradient-primarys {
-        background-color: #1D4AEB !important;  
+        background-color: #FF0091 !important;  
         border: 0px;
         padding: 10px;
         font-size: 24px;
@@ -189,7 +189,7 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
     z-index: 1 !important;
 }
 button.react-multiple-carousel__arrow {
-    background: #1D4AEB !important;
+    background: #ff4e91 !important;
 }
 @media (min-width: 1920px) and (max-width: 2560px)  {
     .conferenceBanner{

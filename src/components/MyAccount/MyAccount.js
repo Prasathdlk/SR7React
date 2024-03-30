@@ -195,7 +195,7 @@ const MyAccount = ({ show, setShow }) => {
     <div>
       <Modal show={show} onHide={() => setShow(false)} dialogClassName="modal-80w" >
         <Modal.Header closeButton>
-          <Modal.Title>My Account</Modal.Title>
+          <Modal.Title style={{color:"black"}}>My Account</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className='d-flex flex-row'>
@@ -204,7 +204,7 @@ const MyAccount = ({ show, setShow }) => {
                 <TabPane key="static-1" tab="My General Information">
                   <div>
                     <div className='col-12 d-flex justify-content-center mt-3'>
-                      <h4>GENERAL<span style={{ color: "#1D4AEB" }}> INFORMATION</span>
+                      <h4>GENERAL<span style={{ color: "#FF0091" }}> INFORMATION</span>
                       </h4>
                     </div>
                     <div className='col-12 d-flex flex-md-column flex-xl-column flex-lg-column  flex-sm-column  flex-column'>

@@ -21,7 +21,7 @@ const contentStyle = {
     padding: "6px 12px 10px 12px",   
     fontSize: "15px",
     fontWeight:"600",
-    background: '#1D4AEB',
+    background: '#FF0091',
     cursor:"pointer"
     // background:"#1D4AEB"
 };

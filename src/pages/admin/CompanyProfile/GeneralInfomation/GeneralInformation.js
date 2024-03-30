@@ -205,7 +205,6 @@ const GeneralInformation = ({
                 </div>
               </div>
             </div>
-            {/* <div className="col-7 single-profile-info"> */}
             <div className='col-7'>
               {!lod && address &&
                 <div className="single-profile-info">
@@ -214,7 +213,7 @@ const GeneralInformation = ({
                 </div>
               }
               {/* </div> */}
-              <div><h6>Membership ID : <span style={{color:"darkgrey",fontSize:"12px"}}>{data?.membership_id}</span></h6></div>
+              <div><h6>Membership ID : <span style={{ color: "darkgrey", fontSize: "12px" }}>{data?.membership_id}</span></h6></div>
             </div>
           </div>
         </div>

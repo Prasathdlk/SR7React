@@ -93,13 +93,13 @@ a.btn.btn-sm.btn-dark.mybtn {
     z-index: 1;
     flex: 1;
     font-size: 12px !important;
-    color: #1D4AEB !important;
+    color: #FF0091 !important;
     font-weight: 700 !important;
 }
 
 th.ant-table-cell {
     font-size: 13px !important;
-    color: #1D4AEB !important;
+    color: #FF0091 !important;
     font-weight: 700 !important;
     font-family: 'Poppins', sans-serif !important;
 }
@@ -118,14 +118,14 @@ th.ant-table-cell {
 
 
 .btn-outline-success {
-    --bs-btn-hover-bg: #1D4AEB !important;
-    --bs-btn-color: #1D4AEB !important;
-    --bs-btn-border-color: #1D4AEB !important;
+    --bs-btn-hover-bg: #FF0091 !important;
+    --bs-btn-color: #FF0091 !important;
+    --bs-btn-border-color: #FF0091 !important;
 }
 
 
 :where(.css-dev-only-do-not-override-htwhyh).ant-carousel .slick-dots li.slick-active button {
-    background: #1D4AEB !important;
+    background: #FF0091 !important;
     opacity: 1;
 }
 
@@ -158,7 +158,7 @@ th.ant-table-cell {
     padding: 6px 12px 10px 12px;
     font-size: 15px;
     font-weight: 600;
-    background: #1D4AEB;
+    background: #FF0091;
     cursor: pointer
 }
 
@@ -173,43 +173,43 @@ th.ant-table-cell {
 
 .btnactive {
     /* border-color: #6a8da5 !important; */
-    background-color: #1D4AEB;
+    background-color: #FF0091;
     color: white;
-    border: 1px solid #1D4AEB !important;
+    border: 1px solid #FF0091 !important;
 }
 
 .btn-outline-dark {
-    border: 1px solid #1D4AEB !important;
-    color: #1D4AEB !important;
+    border: 1px solid #FF0091 !important;
+    color: #FF0091 !important;
 }
 
 .btn-outline-dark:hover {
     color: #ffffff !important;
-    background-color: #1D4AEB !important;
-    border: 1px solid #1D4AEB !important
+    background-color: #FF0091 !important;
+    border: 1px solid #FF0091 !important
 }
 
 /* .btn:hover {
-    color: #1D4AEB;
+    color: #FF0091;
     background-color: white;
 } */
 
 .btn-primary:not([disabled]):not(.disabled).hover,
 .btn-primary:not([disabled]):not(.disabled):hover {
     color: #fff !important;
-    background-color: #1d4aeb !important;
-    border-color: #1d4aeb !important;
+    background-color: #ff4e91 !important;
+    border-color: #ff4e91 !important;
 }
 
 .btn-outline-success {
-    color: #1D4AEB !important;
-    border-color: #1D4AEB !important;
+    color: #FF0091 !important;
+    border-color: #FF0091 !important;
 }
 
 .contactUs {
     position: relative;
     padding: 0px 20px;
-    color: #1D4AEB;
+    color: #FF0091;
     overflow: hidden;
     height: 37px;
 }
@@ -369,8 +369,8 @@ th.ant-table-cell {
 }
 
 .btn-outline-success {
-    color: #1D4AEB !important;
-    border-color: #1D4AEB !important;
+    color: #FF0091 !important;
+    border-color: #FF0091 !important;
     border-width: 1.5px !important;
     border-style: solid;
 }
@@ -402,7 +402,7 @@ th.ant-table-cell {
 }
 
 .right-msg .msg-bubble {
-    background: #1D4AEB;
+    background: #FF0091;
     color: #fff;
     border-bottom-right-radius: 0;
 }
@@ -436,7 +436,7 @@ th.ant-table-cell {
 
 .msger-send-btn {
     margin-left: 10px;
-    background: #1D4AEB;
+    background: #FF0091;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
@@ -466,7 +466,7 @@ th.ant-table-cell {
 }
 
 .startchat .ant-select-selector {
-    background-color: #1D4AEB !important;
+    background-color: #FF0091 !important;
     color: white !important;
 }
 
