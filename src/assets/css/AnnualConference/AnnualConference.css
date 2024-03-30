@@ -60,7 +60,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.40) !important;
-    background-color: #FF0091 !important;
+    background-color: #FF6700 !important;
     color: white !important;
     text-align: center;
 }
@@ -100,8 +100,8 @@
 
 .btn-primarys {
     color: #fff !important;
-    background-color: #FF0091 !important;
-    border-color: #FF0091;
+    background-color: #FF6700 !important;
+    border-color: #FF6700;
 }
 
 .btn-primarys a{
@@ -117,7 +117,7 @@
     /* border: 2px solid #666; */
     color: #ffffff;
     text-align: center;
-    background-color: #FF0091;
+    background-color: #FF6700;
     font-size: 12px;
     /* font: 32px Arial, sans-serif; */
 

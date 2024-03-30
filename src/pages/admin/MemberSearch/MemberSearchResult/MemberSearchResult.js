@@ -233,7 +233,7 @@ const MemberSearchResult = ({Links}) => {
           :
           <div className="col-xl-12 col-lg-12" style={{ margin: "15% 40%" }}>
             <RotatingLines
-              strokeColor="#FF0091"
+              strokeColor="#FF6700"
               strokeWidth="5"
               animationDuration="1.00"
               width="70"

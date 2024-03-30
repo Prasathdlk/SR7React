@@ -151,7 +151,7 @@ const QuoteForm = ({ placeholder, autoFill, member }) => {
         {isLoadingS &&
           <div className="spin-loader">
             <RotatingLines
-              strokeColor="#FF0091"
+              strokeColor="#FF6700"
               strokeWidth="5"
               animationDuration="0.75"
               width="70"

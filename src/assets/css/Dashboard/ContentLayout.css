@@ -218,7 +218,7 @@ input.form-control {
 }
 
 .fc .fc-daygrid-day.fc-day-today {
-    background-color: #ff009133 !important
+    background-color: #FF670033 !important
 }
 
 .calenderIcon {
@@ -229,7 +229,7 @@ input.form-control {
 }
 
 .calenderIconMain {
-    color: #FF0091;
+    color: #FF6700;
     font-size: 16px;
 }
 
@@ -240,7 +240,7 @@ input.form-control {
 
 .modal-header {
     border-bottom: var(--bs-modal-header-border-width) solid #cbcbcb !important;
-    background-color: #FF0091 !important;
+    background-color: #FF6700 !important;
 }
 
 .form-control:focus {
@@ -279,11 +279,11 @@ span.ant-select-clear {
 }
 
 button.submitMeeting.btn.btn-primary {
-    background-color: #FF0091 !important;
+    background-color: #FF6700 !important;
 }
 
 button.submitMeeting.btn.btn-primary:hover {
-    background-color: #FF0091 !important; /* Adjust the color as needed */
+    background-color: #FF6700 !important; /* Adjust the color as needed */
 }
 
 /* Additional styles for clarity */

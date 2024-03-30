@@ -289,7 +289,7 @@ export default [
                 "gamma": "1.43"
             },
             {
-                "color": "#FF0091"
+                "color": "#FF6700"
             }
         ]
     },

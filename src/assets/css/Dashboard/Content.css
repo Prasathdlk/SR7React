@@ -26,7 +26,7 @@
     /* padding-left: 298px; */
     transition: all ease .600s;
     background-color: transparent;
-    background-color:#FF0091
+    background-color:#FF6700
 }
 
 .header-container {
@@ -285,7 +285,7 @@
 }
 
 span.anticon.anticon-calendar {
-    color: #FF0091;
+    color: #FF6700;
 }
 
 .nav-item .dash-btn {
@@ -423,7 +423,7 @@ a.nav-link {
     .header-container .navbar {
         padding: 0px 0;
         height: 160px;
-        background-color: #FF0091 !important;
+        background-color: #FF6700 !important;
     }
     .sub-header-container {
         padding: 0 20px 0 0px !important;
@@ -448,7 +448,7 @@ a.nav-link {
     }
 
     div#responsive-navbar-nav\  {
-        background-color: #FF0091;
+        background-color: #FF6700;
     }
 
     .navlinkTitle {
@@ -462,14 +462,14 @@ a.nav-link {
         flex-grow: 1;
         padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
         overflow-y: auto;
-        background-color: #FF0091;
+        background-color: #FF6700;
     }
 
 
 
     .mobileNavLink:focus,
     .mobileNavLink:hover {
-        background-color: #FF0091;
+        background-color: #FF6700;
         border-radius: 10px;
     }
 
@@ -518,7 +518,7 @@ li.ant-dropdown-menu-item-only-child {
 }
 
 .headerLink {
-    color: #FF0091 !important;
+    color: #FF6700 !important;
     font-weight: 600;
 }
 

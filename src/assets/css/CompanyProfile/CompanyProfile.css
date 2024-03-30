@@ -23,9 +23,9 @@
 
 .btn-success {
     color: #fff !important;
-    background-color: #FF0091 !important;
-    border-color: #FF0091 !important;
-    box-shadow: 0 0px 0px 0px #FF0091 !important;
+    background-color: #FF6700 !important;
+    border-color: #FF6700 !important;
+    box-shadow: 0 0px 0px 0px #FF6700 !important;
 }
 
 button.ant-btn.css-dev-only-do-not-override-htwhyh.ant-btn-default.sendQuoteBtn {
@@ -201,7 +201,7 @@ button.btn.btn-danger {
 }
 
 .text-success-teal {
-    color: #FF0091 !important;
+    color: #FF6700 !important;
 }
 
 .float-right {

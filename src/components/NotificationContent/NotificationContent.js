@@ -109,7 +109,7 @@ const NotificationContent = () => {
           <RotatingLines
             height="20"
             width="20"
-            color="#FF0091"
+            color="#FF6700"
             wrapperStyle={{}}
             wrapperClass=""
             visible={true}

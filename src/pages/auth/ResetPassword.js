@@ -171,7 +171,7 @@ const ResetPassword = () => {
                       />
                       <span className="d-flex align-items-center" onClick={handleToggle} style={{ justifyContent: "right" }}>
                         <Icon className="d-flex mr-10" icon={icon} size={25}
-                          style={{ position: "absolute", width: "3%", color: "#FF0091", marginRight: "2%" }}
+                          style={{ position: "absolute", width: "3%", color: "#FF6700", marginRight: "2%" }}
                         />
                       </span>
                     </div>
@@ -192,7 +192,7 @@ const ResetPassword = () => {
                       />
                       <span className="d-flex align-items-center" onClick={handleToggle1} style={{ justifyContent: "right" }}>
                         <Icon className="d-flex mr-10" icon={icon1} size={25}
-                          style={{ position: "absolute", width: "3%", color: "#FF0091", marginRight: "2%" }}
+                          style={{ position: "absolute", width: "3%", color: "#FF6700", marginRight: "2%" }}
                         />
                       </span>
                     </div>

@@ -44,7 +44,7 @@ const Signin = () => {
     dispatch(memberProfile());
     if (isSuccess || isLoggedin) {
       if (sub) {
-        toast.success("Login Successfully!!! Welcome to SR7 Events & Exhibtions", {
+        toast.success("Login Successfully!!! Welcome to SR7 Automotive", {
           toastId: 'success',
           autoClose: 2000
         });
@@ -57,6 +57,7 @@ const Signin = () => {
       }, 500);
     }
   }, [isSuccess]);
+
 
   useEffect(() => {
     if (error

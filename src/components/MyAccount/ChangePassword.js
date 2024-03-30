@@ -22,7 +22,7 @@ const ChangePassword = () => {
   return (
     <div className='col-12'>
       <div className='col-12 d-flex justify-content-center mt-3'>
-        <h4>CHANGE YOUR<span style={{ color: "#FF0091" }}> PASSWORD</span>
+        <h4>CHANGE YOUR<span style={{ color: "#FF6700" }}> PASSWORD</span>
         </h4>
       </div>
       <div className="row">

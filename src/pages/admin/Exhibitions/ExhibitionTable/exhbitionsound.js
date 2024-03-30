@@ -459,7 +459,7 @@ const ExhibitionTable = ({ setShowDetails }) => {
               :
               <div className="col-xl-12 col-lg-12" style={{ margin: "15% 40%" }}>
                 <RotatingLines
-                  strokeColor="#FF0091"
+                  strokeColor="#FF6700"
                   strokeWidth="5"
                   animationDuration="1.00"
                   width="70"
@@ -476,7 +476,7 @@ const ExhibitionTable = ({ setShowDetails }) => {
                 <MDBCard>
                   <MDBCardHeader
                     className="d-flex justify-content-between align-items-center p-3"
-                    style={{ borderTop: "4px solid #FF0091" }}
+                    style={{ borderTop: "4px solid #FF6700" }}
                   >
                     <h5 className="mb-0">Chat messages</h5>
                     <div className="d-flex flex-row align-items-center">

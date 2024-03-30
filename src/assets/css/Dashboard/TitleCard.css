@@ -12,7 +12,7 @@
 }
 
 .readmorebtn{
-    background-color: #FF0091 !important;
+    background-color: #FF6700 !important;
 }
 .quick-category-head {
     display: flex;
@@ -45,7 +45,7 @@
 }
 
 .layout-spacing a {
-    color: #FF0091 ;
+    color: #FF6700 ;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }

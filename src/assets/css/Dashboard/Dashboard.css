@@ -27,7 +27,7 @@
     width: 100%;
     /* position: absolute; */
     position: fixed;
-    background-color: #FF0091
+    background-color: #FF6700
 }
 
 .tl-logo-area {
@@ -240,7 +240,7 @@ a {
 }
 
 .fixed-profile1 .profile-option-container .option-link i {
-    color: #FF0091;
+    color: #FF6700;
     font-size: 16px;
 }
 
@@ -304,7 +304,7 @@ a {
 }
 
 .fixed-profile .profile-option-container .option-link-container h6 {
-    color: #FF0091 !important;
+    color: #FF6700 !important;
     margin: 0px 0px 2px;
     font-size: 13px;
     font-weight: 600;
@@ -370,8 +370,8 @@ a {
 }
 
 .sidebar-wrapper .menu-categories li.menu>a[data-active="true"] {
-    /* background-image: linear-gradient(#FF0091, #094D72); */
-    background-color: #FF0091;
+    /* background-image: linear-gradient(#FF6700, #094D72); */
+    background-color: #FF6700;
     transition: all ease 0.2s;
     border-radius: 10px;
     color: #ffffff !important;
@@ -448,7 +448,7 @@ a {
 }
 
 .sidebar-icons {
-    color: #FF0091;
+    color: #FF6700;
     font-size: 28px;
 }
 
@@ -641,14 +641,14 @@ div.ant-dropdown-trigger {
 }
 
 .blinks .circles {
-    background: #FF0091;
+    background: #FF6700;
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
 
 .blinks .circles::before {
-    background-color: #FF0091;
+    background-color: #FF6700;
     content: "";
     display: table;
     border-radius: 50%;

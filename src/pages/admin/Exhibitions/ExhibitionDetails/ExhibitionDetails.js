@@ -225,13 +225,13 @@ const ExhibitionDetails = () => {
             </div>
             {isTrash === false ?
               <div className="col-xl-12 col-md-12 col-sm-12 col-12 mt-4">
-                <h5 style={{ textAlign: "center", color: "white", backgroundColor: "#FF0091", padding: "15px" }}>
+                <h5 style={{ textAlign: "center", color: "white", backgroundColor: "#FF6700", padding: "15px" }}>
                   Past Events
                 </h5>
               </div>
               :
               <div className="col-xl-12 col-md-12 col-sm-12 col-12 mt-4">
-                <h5 style={{ textAlign: "center", color: "white", backgroundColor: "#FF0091", padding: "15px" }}>
+                <h5 style={{ textAlign: "center", color: "white", backgroundColor: "#FF6700", padding: "15px" }}>
                   Upcoming Events
                 </h5>
               </div>

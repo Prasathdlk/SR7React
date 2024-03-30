@@ -58,7 +58,7 @@ const Signin = () => {
     dispatch(memberProfile());
     if (isSuccess || isLoggedin) {
       if (sub) {
-        toast.success("Login Successfully!!! Welcome to SR7 Events & Exhibtions", {
+        toast.success("Login Successfully!!! Welcome to SR7 Automotive", {
           toastId: 'success',
           autoClose: 2000
         });
@@ -132,7 +132,7 @@ const Signin = () => {
                   && typeof error.error !== 'undefined'
                   && <span className="error d-block">
                     {error.error} {timer && `${timer} minutes`}
-                    <div className="col-12 d-flex justify-content-center mt-1"><button type="submit" class="col-4 btn bg-gradient-primary text-white " fdprocessedid="llsprm"> <a href="https://sr7eventsexhibitions.com/" style={{color:'white'}}>Go Back </a></button></div>
+                    <div className="col-12 d-flex justify-content-center mt-1"><button type="submit" class="col-4 btn bg-gradient-primary text-white " fdprocessedid="llsprm"> <a href="https://sr7automotive.com/" style={{color:'white'}}>Go Back </a></button></div>
                   </span>
                 }
               </div>
@@ -143,7 +143,7 @@ const Signin = () => {
     </section>
        : <div className="col-xl-12 col-lg-12" style={{ margin: "20% 50%" }}>
        <RotatingLines
-          strokeColor="#FF0091"
+          strokeColor="#FF6700"
           strokeWidth="5"
           animationDuration="1.00"
           width="70"

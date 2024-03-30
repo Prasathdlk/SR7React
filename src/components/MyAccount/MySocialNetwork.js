@@ -30,7 +30,7 @@ const MySocialNetwork = () => {
   return (
     <div className='col-12'>
       <div className='col-12 d-flex justify-content-center mt-3'>
-        <h4>MY SOCIAL<span style={{ color: "#FF0091" }}> NETWORK</span>
+        <h4>MY SOCIAL<span style={{ color: "#FF6700" }}> NETWORK</span>
         </h4>
       </div>
 

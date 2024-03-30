@@ -54,7 +54,7 @@ border-radius: 10px;
 
 :where(.css-htwhyh).ant-btn-primary {
     color: #fff;
-    background-color: #FF0091 !important;
+    background-color: #ff6700 !important;
     box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
     /* border-radius:50px !important; */
 }

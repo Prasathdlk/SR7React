@@ -185,7 +185,7 @@ const ResolutionCenter = () => {
               {isLoading &&
                 <div className="spin-loader">
                   <RotatingLines
-                    strokeColor="#FF0091"
+                    strokeColor="#FF6700"
                     strokeWidth="5"
                     animationDuration="0.75"
                     width="70"

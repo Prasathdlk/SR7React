@@ -192,7 +192,7 @@ const TalaSpotlights = () => {
           {isLoading &&
             <div className="spin-loader-submission">
               <RotatingLines
-                strokeColor="#FF0091"
+                strokeColor="#FF6700"
                 strokeWidth="5"
                 animationDuration="0.75"
                 width="70"
@@ -302,7 +302,7 @@ const TalaSpotlights = () => {
       <div className='col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12 layout-spacing'>
         <div className='widgetNoPad widget-table-one'>
           <div className="col-xl-12 col-md-12 col-sm-12 col-12">
-            <h4 style={{ textAlign: "center", color: "white", backgroundColor: "#FF0091", padding: "20px" }}>Submission History</h4><br />
+            <h4 style={{ textAlign: "center", color: "white", backgroundColor: "#FF6700", padding: "20px" }}>Submission History</h4><br />
           </div>
           <div className='widget-content' style={{ padding: "20px" }}>
             <div className="row">
