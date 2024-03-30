@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Inter','Roboto Condensed',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  /* font-family: 'Kurale', serif !important; */
+  overflow-x: hidden;
+  font-size: 0.875rem;
+}
+
+.btn-close{
+  filter: invert(1) grayscale(100%) brightness(200%) !important;
+  opacity: 1 !important;
+}
+
+.h4 {
+  font-size: 1.125rem !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+tbody.ant-table-tbody {
+  font-size: 12px !important;
+}
+
+.navbar {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .07), 0 0px 0px rgba(0, 0, 0, .05) !important;
+}
+
+.btn {
+  text-transform: inherit !important
+}
+
+.vector-map svg {
+  margin-top: 45px !important;
+}
