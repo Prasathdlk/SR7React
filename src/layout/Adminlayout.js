@@ -142,7 +142,7 @@ const Adminlayout = ({ children, routeIndex }) => {
       value2: "Annual Conference"
     },
     {
-      name: "Events & Exhibitions",
+      name: "Events Participation",
       img: <FaBook />,
       index: 14,
       visible: false,
