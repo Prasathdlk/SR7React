@@ -58,7 +58,7 @@ const AnnualConference2023 = () => {
                       <img src={annual} className='img-fluid annualBannerLogo' width="25%"/>
                     </h3>
                     {/* <h5>Days left for the Conference </h5> */}
-                    <h5 style={{marginTop:"10px"}} className='annualBannerTitles'>Successfully Completed at Phuket, Thailand.</h5>
+                    <h5 style={{marginTop:"10px"}} className='annualBannerTitles'>Successfully Completed at Phuket, Turkey.</h5>
                     <div style={{fontFamily:"500"}} className='annualBannerTitles'>Conference images are now available, click and download from below.</div>
                     
                     {/* <div>

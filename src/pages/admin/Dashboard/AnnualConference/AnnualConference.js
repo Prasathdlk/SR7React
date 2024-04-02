@@ -34,7 +34,7 @@ const AnnualConference = () => {
 
       <div className="col-md-6 col-lg-12 col-xl-12 col-12 widget overflow-hidden "  >
         <p className="text-success-teal strong mt-1" style={{fontSize:"14px"}}>Events & Exhibitions</p>
-        <h5 className="font-17 strong mt-4">Share your Participation, Exhibition & Sponsorships</h5>
+        <h5 className="font-17 strong mt-4">Share your participation in events & exhibitions</h5>
         <Link to='/exhibitions'>
           <span className="btn btn-sm bg-gradient-primary text-white mt-1">View</span><br />
         </Link>
