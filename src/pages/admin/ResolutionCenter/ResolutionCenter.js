@@ -17,14 +17,7 @@ import { Button, Upload } from 'antd';
 import styles from "components/ScrollStyle"
 
 const ResolutionCenter = () => {
-  const para = <>Our Resolution Centre at SR7 Networks is dedicated to facilitating fair resolutions for member disputes, including unpaid invoices and disagreements. Through careful assessment of evidence and communication, we strive to address outstanding issues professionally, fostering trust and confidence with our financial protection plan. <br /><br />
-    We carefully review the evidence provided by both parties and aim to reach an
-    agreement that addresses the unpaid amount. Our goal is to support you in resolving
-    due invoice issues professionally and fairly, ensuring trust and confidence within the
-    SR7 community. <br /><br />
-    We are currently developing financial protection services designed to safeguard the
-    interests of licensees of the SR7 network. This shall be available to all our
-    licensees soon.
+  const para = <>Our Resolution Centre at SR7 Networks is dedicated to facilitating fair resolutions for member disputes, including unpaid invoices and disagreements. Through careful assessment of evidence and communication, we strive to address outstanding issues professionally, fostering trust and confidence with our financial protection plan.
   </>
   const navigate = useNavigate();
   const dispatch = useDispatch();

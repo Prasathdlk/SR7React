@@ -188,7 +188,7 @@ const SubHeader = ({ routeIndex }) => {
                             <AiFillHome style={{ fontSize: "20px", cursor: "pointer" }} />
                           </span> &nbsp;
                         </Link>
-                        <h6 className="mt-1">&nbsp;/ Events & Exhibitions</h6>
+                        <h6 className="mt-1">&nbsp;/ Events Participation</h6>
                       </div>
                     }
                     {routeIndex === "16" &&

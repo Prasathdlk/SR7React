@@ -169,6 +169,7 @@ const TalaSpotlights = () => {
             heading=" Spotlights Submission"
             Para={<>Highlight your company's latest updates, accomplishments, and significant milestones. Share descriptions of these events along with high-resolution images to showcase our achievements.
               <br />
+              Given below are some of the announcements that can be shared on social network platforms.<br />
               <ul>
                 <li>Unique cargo handling</li>
                 <li>Milestones achieved.</li>
