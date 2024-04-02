@@ -16,11 +16,7 @@ const DepartedMember = () => {
     }));
   }, [])
   const para = <>
-    A list of licensees who have exited the SR7 Ship Spares is given below. Carefully
-    review this updated list before initiating any unpaid invoice claims and other
-    unsolved issues.<br /> Note that our resolution centre will not address unpaid claims for departed members
-    after their departure date. <br /> To ensure efficient handling of your claims, it is important to notify us promptly about
-    any outstanding invoices related to the listed departed licensees.
+    Below is a list of members who have left SR7 Networks. Please review this updated list carefully before initiating any unpaid invoice claims or addressing other unresolved issues.<br /> Please note that our resolution centre will not address unpaid claims for departed members after their departure date. <br /> To ensure efficient handling of your claims, it is important to promptly notify us of any outstanding invoices related to the listed departed.
   </>
 
   return (

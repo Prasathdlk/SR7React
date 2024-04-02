@@ -36,7 +36,7 @@ const Announce_Doc = () => {
     <div className="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12 layout-spacing " style={{ marginTop: "25px" }}>
       <div className="widget widget-table-one">
         <div className="widget-heading">
-          <h5 className="">Announcement</h5>
+          {/* <h5 className="">Announcement</h5> */}
         </div>
         <div className="widget-content" style={{ padding: "15px" }}>
           <div className="">
