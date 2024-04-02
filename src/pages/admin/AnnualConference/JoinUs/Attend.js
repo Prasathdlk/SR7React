@@ -491,7 +491,7 @@ const Attend = () => {
             <div className="col-lg-12 mt-4">
               <div className='mt-2'>
                 <label className='mb-2 text-black fontweight'>
-                  Kindly check if Turkey Visa is required for your nationality
+                  Kindly check if Thailand Visa is required for your nationality
                 </label><span className='mx-1'></span>
                 {member_status == 1 || status != 1 ? <span style={{ "color": "#1B4D70", "cursor": "pointer", textDecoration: "underline" }} > https://www.traveldoc.aero/</span> :
                   <a href='https://www.traveldoc.aero/' style={{ "text-decoration": "underline" }} target='_blank'> https://www.traveldoc.aero/</a>
