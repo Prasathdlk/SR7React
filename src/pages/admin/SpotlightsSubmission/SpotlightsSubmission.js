@@ -167,17 +167,13 @@ const TalaSpotlights = () => {
         <div className="col-lg-12 layout-spacing">
           <Cards
             heading=" Spotlights Submission"
-            Para={<>Share about your company's most recent updates you are proud of,
-              accomplishments, and significant milestones by providing a concise description of
-              these events including high-resolution images. <br />
-              Given below are some of the announcements that can be shared on social
-              network platforms.
+            Para={<>Highlight your company's latest updates, accomplishments, and significant milestones. Share descriptions of these events along with high-resolution images to showcase our achievements.
               <br />
               <ul>
                 <li>Unique cargo handling</li>
                 <li>Milestones achieved.</li>
-                <li>Attending/Participating in MRO events</li>
-                <li>Management updates/ Leadership team updates</li>
+                <li>Attending/Participating in Automotive Logistics events</li>
+                <li>Management updates/Leadership team updates</li>
                 <li>New Ventures</li>
               </ul>
 
@@ -204,9 +200,9 @@ const TalaSpotlights = () => {
             <div className='widget-content widget-content-area'>
               <div className='widget-header'>
                 <div className="row">
-                  <div className="col-xl-12 col-md-12 col-sm-12 col-12">
+                  {/* <div className="col-xl-12 col-md-12 col-sm-12 col-12">
                     <h4 className='annualTitles'> Spotlights Submission</h4><br />
-                  </div>
+                  </div> */}
 
                 </div>
               </div>

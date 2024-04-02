@@ -8,6 +8,7 @@ import {
 } from "redux/Actions/EventExhibition";
 import AddEvent from './AddEvent';
 import Exhibition from './Exhibition';
+import EventBanner from '../ExhibitionTable/EventBanner';
 import { DatePicker, Space } from 'antd';
 import moment from 'moment';
 import { FiInbox } from "react-icons/fi"
@@ -113,6 +114,7 @@ const ExhibitionDetails = () => {
 
   return (
     <div className="layout-px-spacing">
+      <EventBanner />
       <ToastContainer />
       <div className="row layout-spacing layout-top-spacing" id="cancel-row">
         <div className="col-lg-12">

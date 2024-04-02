@@ -350,7 +350,7 @@ const EventAttendees = () => {
 
   return (
     <>
-      <EventBanner />
+      {/* <EventBanner /> */}
       <div className="col-xl-12 col-lg-12 align-self-center w-100 mb-3">
         <Link to="/exhibitions">
           <div className="btn btn-sm readmorebtn text-white p-1">

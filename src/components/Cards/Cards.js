@@ -5,10 +5,10 @@ const Cards = ({ heading, Para }) => {
     return (
         <div className="profile-info">
             <div className="row">
-                <div className="col-xl-12 col-md-12 col-sm-12 col-12">
+                {/* <div className="col-xl-12 col-md-12 col-sm-12 col-12">
                     <h4 className='annualTitles'> {heading}</h4>
                     <br />
-                </div>
+                </div> */}
             </div>
             <div style={{ textAlign: "justify" }} className='announcePara'>
                 {Para}

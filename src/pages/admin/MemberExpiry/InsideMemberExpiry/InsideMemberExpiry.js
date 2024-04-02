@@ -12,11 +12,7 @@ const columns = [
 
 const InsideMemberExpiry = ({ licensesList }) => {
   const [SC, setSC] = useState('');
-  const para = `The list of companies whose licences have expired or that are nearing expiration are
-  listed below. To ensure uninterrupted business operations and compliance, a
-  reminder email will be sent 30 days before licence expiration, prompting them to
-  renew their licence. Check this section regularly for updates on upcoming
-  expirations.`;
+  const para = `Below is a list of companies whose memberships have either expired or are nearing expiration. To maintain uninterrupted business operations and ensure compliance, we will send a reminder email 30 days before the membership expiration date, prompting them to renew. Please check this section regularly for updates on upcoming expirations.`;
 
   const [expiryMember, setExpiryMember] = useState([]);
 
@@ -62,7 +58,7 @@ const InsideMemberExpiry = ({ licensesList }) => {
       <div className="widget-content widget-content-area br-6" style={{ marginTop: "25px" }}>
         <div className="col-12 d-flex flex-md-row flex-row mb-4">
           <div className="col-md-6 col-6">
-            <h4 style={{ fontSize: "18px", color: "black", fontWeight: "700", }}>Members Expiry</h4>
+            {/* <h4 style={{ fontSize: "18px", color: "black", fontWeight: "700", }}>Members Expiry</h4> */}
           </div>
           <div className='col-6 col-md-6 d-flex justify-content-end  contact-options'>
             <div className='col-12 col-md-6 d-flex justify-content-end '>
