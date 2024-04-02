@@ -45,8 +45,8 @@ const DepartedTable = ({licensesList}) => {
   return (
     <div className="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
       <div className="widget-content widget-content-area br-6">
-        <h4 className="annualTitles">Departed Members</h4>
-        <br /><br />
+        {/* <h4 className="annualTitles">Departed Members</h4>
+        <br /><br /> */}
         <div className="table-responsive mb-4">
           <Table
             columns={columns}

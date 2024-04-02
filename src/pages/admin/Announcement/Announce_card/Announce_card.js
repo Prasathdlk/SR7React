@@ -4,7 +4,7 @@ import Cards from 'components/Cards/Cards'
 
 const Announce_card = () => {
     
-    const para = `Check out the latest updates from SR7 management on internal news, accomplishments, new Members announcements, management updates, and more.`;
+    const para = `Come take a look at the exciting updates from SR7 Networks management! Stay updated on our latest internal news, achievements, new member announcements, management changes, and more.`;
     return (
         <Cards
             heading="Announcements"
