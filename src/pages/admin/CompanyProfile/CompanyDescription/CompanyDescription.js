@@ -70,7 +70,8 @@ function CompanyDescription({ info, bInfo, country, branchId }) {
                                 <>
                                     {companyName !== "expedite obc - strategic partner" && companyName !== "engine logistics services & solutions e.l.s" ? (
                                         <BoldHeading
-                                            Boldheading={`SR7 ${(country) ? country : info?.main_country} powered by ${info?.company_name}`}
+                                            //Boldheading={`SR7 ${(country) ? country : info?.main_country} powered by ${info?.company_name}`}
+                                            Boldheading={info?.company_name}
                                         />
                                     ) : null}
                                     <br />

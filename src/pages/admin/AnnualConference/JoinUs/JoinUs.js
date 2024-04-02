@@ -39,7 +39,8 @@ const JoinUs = forwardRef((props, ref) => {
 
   useEffect(() => {
     if (isSuccess) {
-      const year = new Date().getFullYear();
+      //const year = new Date().getFullYear();
+      const year = 2025;
       setTimeout(() => {
         if (Object.keys(isSuccess).length > 0
           && typeof isSuccess.msg !== 'undefined' && isSuccess.msg != 'Registered successfully!') {

@@ -33,7 +33,8 @@ const AnnualConferenceCard = () => {
   };
   const dispatch = useDispatch();
   useEffect(() => {
-    const year = new Date().getFullYear();
+    //const year = new Date().getFullYear();
+    const year = 2025;
     dispatch(getConferenceBanner({year}));
   }, [])
   const { isLoading, conferenceBanner } = useSelector(state => state.annualconference);

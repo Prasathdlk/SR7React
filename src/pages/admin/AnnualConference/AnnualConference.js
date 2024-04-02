@@ -45,7 +45,8 @@ const AnnualConference = () => {
   const { isLoading, conferenceBanner } = useSelector(state => state.annualconference);
 
   useEffect(() => {
-    const year = new Date().getFullYear();
+    //const year = new Date().getFullYear();
+    const year = 2025;
     dispatch(getAttendeeList({ year }));
     dispatch(getSponsersList({ year }));
     dispatch(getKeyEventsList({ year }));
@@ -124,9 +125,9 @@ const AnnualConference = () => {
           <div className='d-flex flex-row' style={{ marginBottom: "25px" }}>
             <button
               className="btn btn-primaryss mr-2"
-              value="2024"
+              value="2025"
               onClick={(e) => handlebtnClick(e)}>
-              2024
+              2025
             </button>
             {/* <button
               className="btn btn-primaryss mr-2"
