@@ -33,11 +33,11 @@ const EventBanner = () => {
                                 <div className=''>
                                 </div>
 
-                                <div className='headingBtnEvent'>
+                                {/* <div className='headingBtnEvent'>
                                   <Link to={'/exhibitions'} >
                                     View & Submit Events
                                   </Link>
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           )
