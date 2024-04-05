@@ -26,8 +26,8 @@ const SendViewQuote = () => {
       {!isLoading ?
         <>
           <div className="layout-px-spacing">
-            <div className="row layout-spacing pt-4">
-              <SearchBox heading="Send View Members Search" type="quote" />
+            <div className="row layout-spacing">
+              {/* <SearchBox heading="Send View Members Search" type="quote" /> */}
               <SVQuoteCard setAutoFill={setAutoFill} removeId={removeId} />
               <SVQuoteForm autoFill={autoFill} setRemoveId={setRemoveId} />
               <SVQuoteTable quoteList={sendQuoteList} />
