@@ -91,6 +91,19 @@ const How_to = ({ documentsList }) => {
                   <h5 className="mb-1" onClick={() => downloadFile(item.document_file_url)}>
                     {item?.title}
                   </h5>
+                  <a
+                    href={item.document_file_url}
+                    download="Example-PDF-document"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {/* <div className="d-flex col-12 justify-content-center btn btn-sm btn-primary text-white">
+                      <div>Download Files</div>
+                    </div> */}
+                    <div className='col-12 d-flex justify-content-center'>
+                      <button type="submit" className="text-white btn btn-sm readmorebtn mr-2">Download Files</button>
+                    </div>
+                  </a>
                 </div>
                 <p className="mb-1">
                   Author: {item?.author}
