@@ -298,8 +298,8 @@ const MeetMembers = () => {
       <div className="row layout-spacing pt-4">
         <div className="col-xl-12 col-lg-4 col-md-12 col-sm-12 col-12">
           <div className="">
-            {/* <SearchBox heading="Meet Members Search" type="meetmember" />
-            <br /> */}
+            <SearchBox heading="" type="meetmember" />
+            {/* <br /> */}
             <MeetMemberSearchResult selectHandle={selectHandle} />
             <br />
           </div>
