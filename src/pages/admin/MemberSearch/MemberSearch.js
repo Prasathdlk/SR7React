@@ -9,8 +9,8 @@ const MemberSearch = () => {
     <div className="layout-px-spacing">
       <div className="row layout-spacing pt-4">
         <div className="col-lg-12">
-          <SearchBox heading="Members Search" type="member"/>
-          <br />
+          <SearchBox heading="" type="member"/>
+          {/* <br /> */}
           <MemberSearchResult Links={Link}/>         
         </div>
       </div>
