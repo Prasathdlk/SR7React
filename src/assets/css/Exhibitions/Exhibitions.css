@@ -97,6 +97,11 @@ a.btn.btn-sm.btn-dark.mybtn {
     font-weight: 700 !important;
 }
 
+.exhi_btn
+{
+    border: 1px solid white !important;
+}
+
 th.ant-table-cell {
     font-size: 13px !important;
     color: #1D4AEB !important;

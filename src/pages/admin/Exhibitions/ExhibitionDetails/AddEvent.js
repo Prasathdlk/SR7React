@@ -22,6 +22,10 @@ const AddEvent = ({ show, setShow }) => {
   const { isLoading, validation, isSuccess } = useSelector(state => state.exhibition);
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const { countryAllList } = useSelector(state => state.member);
+  const [fromDate, setFromDate] = useState('');
+  const [fromDateVal, setFromDateVal] = useState(false);
+  const [toDate, setToDate] = useState('');
+  const [toDateVal, setToDateVal] = useState(false);
 
   useEffect(() => {
     dispatch(setValidation());
@@ -51,18 +55,37 @@ const AddEvent = ({ show, setShow }) => {
         reset();
         setFile(false);
         setShow(false);
+        setFromDate('');
+        setToDate('');
       }, 1000);
     }
   }, [isSuccess])
 
 
   const onSubmit = async (fdata) => {
-    // debugger;
-    if (!file) {
-      setIsFile(true);
+    // if (!file) {
+    //   setIsFile(true);
+    //   return false;
+    // } else {
+    //   setIsFile(false);
+    // }
+
+
+    if (fromDate) {
+      setFromDateVal(false)
+    }
+    else {
+      setFromDateVal(true)
       return false;
-    } else {
-      setIsFile(false);
+    }
+
+
+    if (toDate) {
+      setToDateVal(false)
+    }
+    else {
+      setToDateVal(true)
+      return false;
     }
 
     var formdata = new FormData();
@@ -79,12 +102,14 @@ const AddEvent = ({ show, setShow }) => {
 
   }
 
-  const [fromDate, setFromDate] = useState('');
-  const [toDate, setToDate] = useState('');
 
   const handleFromDateChange = (e) => {
     const selectedFromDate = e.target.value;
     setFromDate(selectedFromDate);
+    if (selectedFromDate)
+      setFromDateVal(false)
+    else
+      setFromDateVal(true)
    
     if (toDate && selectedFromDate > toDate) {
       setToDate('');
@@ -92,7 +117,12 @@ const AddEvent = ({ show, setShow }) => {
   };
 
   const handleToDateChange = (e) => {
-    setToDate(e.target.value);
+    const selectedToDate = e.target.value;
+    setToDate(selectedToDate);
+    if (selectedToDate)
+      setToDateVal(false)
+    else
+      setToDateVal(true)
   };
 
   return (
@@ -169,8 +199,8 @@ const AddEvent = ({ show, setShow }) => {
                       min={moment(new Date()).subtract(0, 'days').format('YYYY-MM-DD')}
                       onChange={handleFromDateChange}
                     />
+                    {fromDateVal && <span className="error d-block">This field should not be empty</span>}
                   </div>
-                  {errors.date && <span className="error d-block">{errors.date.message}</span>}
                 </div>
                 <div className='d-flex flex-row  col-12 col-md-6 p-1'>
                   <div className="col-2 d-flex justify-content-center align-items-center"
@@ -192,8 +222,8 @@ const AddEvent = ({ show, setShow }) => {
                       min={fromDate} // Set the minimum selectable date based on "From" date
                       onChange={handleToDateChange}
                     />
+                    {toDateVal && <span className="error d-block">This field should not be empty</span>}
                   </div>
-                  {errors.date && <span className="error d-block">{errors.date.message}</span>}
                 </div>
               </div>
             </Form.Group>
