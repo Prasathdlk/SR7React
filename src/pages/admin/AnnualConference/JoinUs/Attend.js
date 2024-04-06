@@ -47,6 +47,7 @@ const Attend = () => {
   const [toDateVal, setToDateVal] = useState(false);
   const [fileList, setFileList] = useState([]);
   const [maxFile, setMaxFile] = useState(false);
+  const [otherPre, setOtherPre] = useState(false);
   const [showMelas, setshowMelas] = useState(true);
   const [showCircle, setShowCircle] = useState(false);
   const [updateshow, setUpdateShow] = useState(false);
@@ -162,6 +163,12 @@ const Attend = () => {
     }
   }
 
+  const handlePre = (e) =>{
+    if (e.target.value != '') {
+      setOtherPre(false);
+    }
+  }
+
   const cancelHandle = (value) => {
     if (value === 'attend') {
       dispatch(cancelAttended(conferenceBanner?.data?.id))
@@ -244,6 +251,16 @@ const Attend = () => {
       setMaxFile(true);
       let newFile = document.getElementById('uploadPhoto');
       newFile.scrollIntoView({ behavior: `smooth`, block: 'center' });
+      return false;
+    }
+
+ 
+    if(data.preferences == undefined || data.preferences =='')
+    { 
+      setShowCircle(false);
+      setOtherPre(true);
+      let meal_pre = document.getElementById('meal_pre');
+      meal_pre.scrollIntoView({ behavior: `smooth`, block: 'center' });
       return false;
     }
 
@@ -536,7 +553,7 @@ const Attend = () => {
             {errors.visa && <span className="error d-block">{errors.visa.message}</span>}
           </div> */}
 
-            <div className="col-lg-12 mt-4">
+            <div className="col-lg-12 mt-4" id="meal_pre">
               <div className='d-flex col-lg-6'>
                 <label className='mb-2 text-black fontweight'>
                   Meals Preference
@@ -569,11 +586,12 @@ const Attend = () => {
                       required
                       {...register("preferences")}
                       disabled={showMelas ? true : false}
+                      onChange={handlePre}
                     //disabled
                     />
                   </div>
                 </div>
-                <div className='mt-2'><span style={{ fontSize: "12px" }}>(Please specify any other preferences or allergies)</span></div>
+                <div className='mt-2'><span style={{ fontSize: "12px", color: otherPre ? "red" : '' }}>(Please specify any other preferences or allergies)</span></div>
               </div>
             </div>
             {errors.meals && <span className="error d-block">{errors.meals.message}</span>}
