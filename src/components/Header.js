@@ -29,7 +29,7 @@ import { setInitialListParms } from "redux/Reducers/CompanySlice";
 import { setForSearch } from 'redux/Reducers/MemberSlice';
 import { Link,useNavigate } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai"
-import logo from "assets/img/logoMobile.png"
+import logo from "assets/img/logoMobile.jpg"
 import { Tooltip } from 'antd';
 
 const Header = ({ sidebarroutes }) => {

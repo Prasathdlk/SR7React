@@ -16,6 +16,15 @@
     color: #000000;
 }
 
+.navbar-toggler
+{
+    background-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg) !important;
+}
+
 .li.ant-list-item.unread {
     background-color: #1b4d70;
     color: #ffffff;
