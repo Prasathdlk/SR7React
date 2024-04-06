@@ -21,6 +21,16 @@
     color: #ffffff;
 }
 
+.navbar-toggler
+{
+    background-color: white !important;
+}
+
+.navbar-light .navbar-toggler-icon
+{
+    background-image: var(--bs-navbar-toggler-icon-bg) !important;
+}
+
 .main-container::before {
     content: "";
     height: 235px;

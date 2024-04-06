@@ -162,6 +162,11 @@ th.ant-table-cell {
     cursor: pointer
 }
 
+.exhi_btn
+{
+    border: 1px solid white !important;
+}
+
 .exhibitionBannerCard {
     position: relative;
     padding: 10px 20px 10px 20px;
