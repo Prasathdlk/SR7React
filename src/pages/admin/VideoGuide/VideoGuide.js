@@ -26,7 +26,7 @@ const VideoGuide = () => {
             <h4 className="table-header" style={{ fontSize: "1.25rem" }}>Video Guide</h4>
             <br /><br />
             <div className='d-flex justify-content-center'>
-              {videoGuideList?.data?.youtube_video ? <iframe width="500" height="315" src={videoGuideList?.data?.youtube_video}></iframe> : videoGuideList?.data?.vimeo_video  ? <iframe width="500" height="315" src={ videoGuideList?.data?.vimeo_video}></iframe> : videoGuideList?.data?.video_file  ? <iframe width="500" height="315" src={ videoGuideList?.data?.video_file}></iframe> : <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} /> }
+              {videoGuideList?.data?.youtube_video ? <iframe width="500" height="315" src={videoGuideList?.data?.youtube_video}></iframe> : videoGuideList?.data?.video_file  ? <iframe width="500" height="315" src={ videoGuideList?.data?.video_file}></iframe> : <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} /> }
             </div>
           </div>
         </div>
