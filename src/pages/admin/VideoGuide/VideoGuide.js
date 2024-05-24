@@ -29,7 +29,7 @@ const VideoGuide = () => {
                 {Object.keys(videoGuideList).length > 0
                   && Object.keys(videoGuideList.data).length
                   && videoGuideList.data.map((item) => {
-                    return (item.youtube_video ? <div className="mb-4 col"><iframe width="500" height="315" src={item.youtube_video}></iframe> </div> : item.video_file ? <div className="mb-4 col"><iframe width="500" height="315" src={item.data?.video_file}></iframe> </div> : <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} />)
+                    return (item.youtube_video ? <div className="mb-4 col"><iframe width="500" height="315" src={item.youtube_video}></iframe> </div> : item.video_file ? <div className="mb-4 col"><iframe width="500" height="315" src={item.video_file}></iframe> </div> : <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} />)
                   })
                 }
               </div>
