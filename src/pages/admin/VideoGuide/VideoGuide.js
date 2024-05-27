@@ -17,6 +17,7 @@ const VideoGuide = () => {
     videoGuideList
   } = useSelector(state => state.videoGuide);
 
+
   return (
     <div className="layout-px-spacing">
       <div className="row layout-spacing pt-4">
@@ -25,11 +26,14 @@ const VideoGuide = () => {
             <h4 className="table-header" style={{ fontSize: "1.25rem" }}>Video Guide</h4>
             <br /><br />
             <div className='d-flex justify-content-center'>
+                {Object.keys(videoGuideList.data).length == 0 && 
+                  <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }}  />
+                }
               <div className="mt-3 row row-cols-md-2 row-cols-1">
                 {Object.keys(videoGuideList).length > 0
-                  && Object.keys(videoGuideList.data).length
+                  && Object.keys(videoGuideList.data).length > 0
                   && videoGuideList.data.map((item) => {
-                    return (item.youtube_video ? <div className="mb-4 col"><iframe width="500" height="315" src={item.youtube_video}></iframe> </div> : item.video_file ? <div className="mb-4 col"><iframe width="500" height="315" src={item.video_file}></iframe> </div> : <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} />)
+                    return (item.youtube_video ? <div className="mb-4 col"><iframe width="500" height="315" src={item.youtube_video}></iframe> <br /><span>{item.title}</span></div> : item.video_file ? <div className="mb-4 col"><iframe width="500" height="315" src={item.video_file}></iframe> <br /><div style={{ fontSize:20,fontWeight:'bold',width:500 }}>{item.title}</div></div> : '')
                   })
                 }
               </div>
