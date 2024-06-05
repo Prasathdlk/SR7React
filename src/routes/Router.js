@@ -30,6 +30,7 @@ import EventDetailsTable from "pages/admin/Exhibitions/ExhibitionTable/Exhibitio
 import EventAttendees from "pages/admin/Exhibitions/ExhibitionTable/EventAttendees";
 import ViewNotifications from "components/NotificationContent/AllNotifications/ViewNotifications";
 import Conference2023 from "pages/admin/AnnualConference/Conference2023/Conference2023";
+import VideoGuideDetails from "pages/admin/VideoGuide/VideoGuideDetails";
 
 const Router = () => {
   return (
@@ -64,6 +65,7 @@ const Router = () => {
           <Route path="/exhibitions/details/:id?" element={<ProtectedRoutes component={EventDetailsTable} index="21" />} />
           <Route path="/viewnotification" element={<ProtectedRoutes component={ViewNotifications} index="23" />} />
           <Route path="/conference2023" element={<ProtectedRoutes component={Conference2023} index="24" />} />
+          <Route path="/videoguide/details/:id/:d?" element={<ProtectedRoutes component={VideoGuideDetails} index="25" />} />
         </Routes> 
       </BrowserRouter>
     </>
