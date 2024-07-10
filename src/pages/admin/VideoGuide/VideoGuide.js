@@ -50,7 +50,7 @@ const VideoGuide = () => {
             <h4 className="table-header" style={{ fontSize: "1.25rem" }}>Video Guide</h4>
             <br /><br />
             <div className='d-flex justify-content-center'>
-              {Object.keys(videoGuideList?.data).length == 0 &&
+              {videoGuideList?.data?.length == 0 &&
                 <img src={coming} alt='coming' className='img-fluid ' style={{ width: "60%", height: "60%" }} />
               }
             </div>

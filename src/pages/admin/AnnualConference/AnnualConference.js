@@ -8,7 +8,8 @@ import {
   getSponsersList,
   getAttendeeList,
   getConferenceBanner,
-  getKeyEventsList
+  getKeyEventsList,
+  getAttendeeYear
 } from "redux/Actions/AnnualConference"
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
@@ -51,12 +52,14 @@ const AnnualConference = () => {
     dispatch(getSponsersList({ year }));
     dispatch(getKeyEventsList({ year }));
     dispatch(getConferenceBanner({ year }));
+    dispatch(getAttendeeYear());
     window.scrollTo(0, 0);
   }, [])
   const {
     sponsersList,
     attendeeList,
-    keyEventsList } = useSelector(state => state.annualconference);
+    keyEventsList,
+    attendeeYear } = useSelector(state => state.annualconference);
   const scrollRef = useRef(null);
 
   const handlebtnClick = (e) => {
@@ -123,18 +126,18 @@ const AnnualConference = () => {
             </div>
           </div>
           <div className='d-flex flex-row' style={{ marginBottom: "25px" }}>
-            <button
-              className="btn btn-primaryss mr-2"
-              value="2025"
-              onClick={(e) => handlebtnClick(e)}>
-              2025
-            </button>
-            {/* <button
-              className="btn btn-primaryss mr-2"
-              value="2023"
-              onClick={(e) => handlebtnClick(e)}>
-              2023
-            </button> */}
+            {
+              attendeeYear?.data?.length > 0 &&
+              attendeeYear?.data?.map((item, index) => {
+                return (
+                  <button
+                    className="btn btn-primaryss mr-2"
+                    value={item.year}
+                    onClick={(e) => handlebtnClick(e)}>
+                    {item.year}
+                  </button>
+                )
+              })}
           </div>
           {conferenceBanner?.data?.sub_banner_url && <div className='widget-content widget-content-area' style={{ marginBottom: "25px", padding: "10px 20px" }}>
             {/* <AnnualConferenceCard /> */}
