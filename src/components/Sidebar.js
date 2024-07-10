@@ -97,7 +97,7 @@ const Sidebar = ({ sidebarroutes }) => {
                     //     </Badge.Ribbon>
                     //   )
                     // }
-                    if (data.name === "Video Guide") {
+                    {/* if (data.name === "Video Guide") {
                       return (
                         <Badge.Ribbon text="Coming Soon..." color="red">
                           <div className="card finacard1">
@@ -109,7 +109,7 @@ const Sidebar = ({ sidebarroutes }) => {
                         </Badge.Ribbon>
                       )
                     }
-                    else {
+                    else { */}
                       return (
                         <>
                           <i className="las la-home" data-active={`${data.name === exteraRoute ? true : false}`}>
@@ -118,7 +118,7 @@ const Sidebar = ({ sidebarroutes }) => {
                           <span>{data.name}</span>
                         </>
                       )
-                    }
+                    {/* } */}
                   })()}
                 </Link>
               </li>

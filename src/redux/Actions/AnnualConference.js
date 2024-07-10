@@ -131,6 +131,33 @@ const getAttendeeList = createAsyncThunk(
 )
 
 
+const getAttendeeYear = createAsyncThunk(
+  'member/attendee-year',
+  async () => {    
+    try {
+      const response = await api.get(`member/attendee-year`, {
+        headers: {
+          "Authorization": "Bearer " + localStorage.getItem("token"),          
+        }
+      })
+        .then((value) => {  
+          return { status: 200, data: value.data };
+        })
+        .catch((err) => {
+          return { status: 400, data: err.response.data };
+        });
+      return response;
+    } catch (err) {
+      return {
+        status: 400,
+        error: err.message
+      };
+    }
+  }
+)
+
+
+
 const getKeyEventsList = createAsyncThunk(
   'member/list-key-events',
   async (data) => {    
@@ -217,5 +244,6 @@ export {
   getAttendeeList,
   getKeyEventsList,
   cancelAttended,
-  cancelSponsored
-};
+  cancelSponsored,
+  getAttendeeYear
+};  

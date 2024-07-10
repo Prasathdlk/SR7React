@@ -7,7 +7,8 @@ import {
   getAttendeeList,
   getKeyEventsList,
   cancelAttended,
-  cancelSponsored
+  cancelSponsored,
+  getAttendeeYear
 } from "redux/Actions/AnnualConference";
 
 const AnnualConferenceSlice = createSlice({
@@ -21,6 +22,7 @@ const AnnualConferenceSlice = createSlice({
     tokenExp: false,
     sponsersList: {},
     attendeeList: {},
+    attendeeYear: {},
     keyEventsList: {},
     conferenceBanner: {},
   },
@@ -91,6 +93,19 @@ const AnnualConferenceSlice = createSlice({
       state.isLoading = true;
     });
     builder.addCase(getAttendeeList.rejected, (state) => {
+      state.isLoading = false;
+    });
+
+
+     /* Get Attendee Years List */
+     builder.addCase(getAttendeeYear.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.attendeeYear = action.payload.status === 200 ? action.payload.data : {};
+    });
+    builder.addCase(getAttendeeYear.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(getAttendeeYear.rejected, (state) => {
       state.isLoading = false;
     });
     
