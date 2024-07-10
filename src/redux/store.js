@@ -12,6 +12,7 @@ import EventExhibitionSlice from "./Reducers/EventExhibitionSlice";
 import AnnualConferenceSlice from "./Reducers/AnnualConferenceSlice";
 import DashboardSlice from "./Reducers/DashboardSlice";
 import NotificationsSlice from "./Reducers/NotificationsSlice";
+import VideoGuideSlice from "./Reducers/VideoGuideSlice";
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';
@@ -32,6 +33,7 @@ const appReducers = combineReducers({
   annualconference: AnnualConferenceSlice,
   dashboard: DashboardSlice,
   notfication: NotificationsSlice,
+  videoGuide: VideoGuideSlice
 });
 
 const reducers = (state, action) => {
