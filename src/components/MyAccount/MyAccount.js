@@ -45,6 +45,7 @@ const MyAccount = ({ show, setShow }) => {
   const [countryCode, setCountryCode] = useState('')
   const [phoneCountry, setPhoneCountry] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
+  const [phoneError, setphoneError] = useState(false)
   const { cBranch } = useSelector(state => state.company);
   // const { companyId } = useSelector(state => state.loggedin);
   // console.log('airportData',airportData)
@@ -159,6 +160,12 @@ const MyAccount = ({ show, setShow }) => {
     if (file) {
       formdata.append("profile_logo", file);
     }
+    if(phoneNumber?.length == 0 || phoneNumber?.length == 1 || phoneNumber?.length == 2 || phoneNumber?.length == 3 || phoneNumber?.length == 4)
+      {
+        setphoneError(true);
+        return false;
+      }
+      setphoneError(false);
     dispatch(updateProfile(formdata));
   }
   const photoUpload = e => {
@@ -185,6 +192,7 @@ const MyAccount = ({ show, setShow }) => {
   );
 
   const onValueChange = (value, data) => {
+    setphoneError(false);
     setPhoneNumber(value)
     setCountryCode(data.countryCode);
   }
@@ -277,6 +285,7 @@ const MyAccount = ({ show, setShow }) => {
                                     value={initialValue}
                                   />
                                   {errors.phone && <span className="col-12 error d-block d-flex justify-content-end">{errors.phone.message}</span>}
+                                  {phoneError && <span className="col-12 error d-block d-flex justify-content-end">Phone number should not be empty</span>}
                                 </div>
                               </div>
                             </div>
