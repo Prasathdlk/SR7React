@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 const ExhibitionDetails = () => {
   const [month, setMonth] = useState(false);
   const [year, setYear] = useState(false);
+  const [sortedData, setSortedData] = useState([]);
   useEffect(() => {
     const data = {};
     data.event = 1;
@@ -80,8 +81,21 @@ const ExhibitionDetails = () => {
     dispatch(getTeamMembers());
   }, []);
 
+  useEffect(() => {
+    setSortedData(exhibitionDetails.data);
+  }, [exhibitionDetails.data]);
+
   const [isTrash, setIsTrash] = useState(true)
   const exhbitionHandle = (event) => {
+    const sortedData = [...exhibitionDetails.data];
+    const filteredData = sortedData.filter(data => data.is_trash === 1);
+    filteredData.sort((a, b) => {
+      const dateA = new Date(a.to_date);
+      const dateB = new Date(b.to_date);
+      return dateB - dateA;
+    });
+
+    setSortedData(filteredData);
     if(exhibitionDetails.allTrash == 1)
     {
       setIsTrash(false);
@@ -96,6 +110,7 @@ const ExhibitionDetails = () => {
     setActive(event.target.id);
   }
   const exhbitionUpcomingHandle = (event) => {
+    setSortedData(exhibitionDetails.data);
     if(exhibitionDetails.allTrash == 1)
     {
       setIsTrash(true);
@@ -238,9 +253,8 @@ const ExhibitionDetails = () => {
                 </h5>
               </div>
             }
-            {Object.keys(exhibitionDetails).length > 0
-              && exhibitionDetails.data.length > 0 && exhibitionDetails.allTrash == 0 && isTrash 
-              ? exhibitionDetails.data.map((item, index) => {
+            { sortedData?.length > 0 && sortedData.allTrash == 0 && isTrash 
+              ? sortedData.map((item, index) => {
                 return (
                   <Exhibition
                     key={`ex${index}`}
@@ -249,9 +263,8 @@ const ExhibitionDetails = () => {
                     isTrash={isTrash}
                   />
                 )
-              }) : Object.keys(exhibitionDetails).length > 0
-              && exhibitionDetails.data.length > 0 && exhibitionDetails.allTrash == 1  && !isTrash || exhibitionDetails.allTrash == 0  && !isTrash
-              ? exhibitionDetails.data.map((item, index) => {
+              }) :  sortedData?.length > 0 && sortedData.allTrash == 1  && !isTrash || sortedData.allTrash == 0  && !isTrash
+              ? sortedData.map((item, index) => {
                 return (
                   <Exhibition
                     key={`ex${index}`}
